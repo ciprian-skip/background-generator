@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Background Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Quantico|VT323" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151023018-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151023018-1');
+    </script>
+
+</head>
+<body id="gradient">
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Gradient Generator <i class="fas fa-random"></i></h1>
+        <div class="group">
+            <input class="color1" type="color" name="color1" value="#f2ff3e">
+            <input class="color2" type="color" name="color2" value="#ff9100">
+        </div>
+        
+        <div class="group">
+            <Div>
+                <label for="right">To right</label>
+                <input type="radio" name="direction" id="right" checked="checked">
+            </Div>
+            <div>
+                <label for="right">To left</label>
+                <input type="radio" name="direction" id="left">
+            </div>
+            <div>
+                <label for="right">To bottom</label>
+                <input type="radio" name="direction" id="bottom">
+            </div>
+            <div>
+                <label for="right">To top</label>
+                <input type="radio" name="direction" id="top">
+            </div>
+        </div class="group">
+        
+        <button id="random" title="Generate Random">Generate <i class="fas fa-sync-alt"></i></button>
+        <div class="group">
+            <h3 class="css-code" onClick='copyText(this)'> </h3>
+            <h4 class="copybutton">Click CSS to copy.</h4>
+        </div>
+        
+    </div>
+
+
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

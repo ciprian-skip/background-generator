@@ -1,0 +1,193 @@
+body {
+    color: #111;
+    font-family: 'Mitr', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background: linear-gradient(to right, #f2ff3e, #ff9100);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-shadow: inset 0px 0px 500px black;
+}
+.color2{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    outline: none !important;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+}
+
+.color2:focus{
+    outline:none;
+}
+
+.color2:hover{
+    border: 5px solid #111;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.color1{
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    padding: 0 !important;
+    margin: 5px !important;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none !important;
+    transition: 0.2s;
+}
+
+.color1:focus{
+    outline:none;
+}
+
+.color1:hover{
+    border: 5px solid #111;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.color-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.group{
+    margin: 20px 0px;
+    position: relative;
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    text-shadow: 0px 0px 5px black;
+    font-size: 70px;
+    margin: 0;
+}
+
+h1 i{
+    position: relative;
+    top: 6px;
+}
+
+#particles-js{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#random {
+	border-radius: 5px;
+	border: none;
+    padding: 10px 60px;
+    background-color: #fff;
+    color: #111;
+	font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+    transition: 300ms ease;
+}
+
+#random:hover{
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0px 10px 10px -10px rgba(17, 17, 17, 0.8);
+    transition: 300ms ease;
+}
+
+#random:hover i{
+    transform: rotate(180deg);
+    transition: 300ms ease;
+}
+
+
+input[type="radio"]{
+    width: 35px;
+    height: 35px;
+    margin-right: 50px;
+    position: relative;
+    top: 5px;
+}
+
+label{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+#random:focus{
+    outline: none;
+}
+
+.copybutton{
+    border-radius: 10px;
+    padding: 5px 15px;
+    opacity: .6;
+    font-size: 25px;
+    text-shadow: 0px 0px 5px black;
+    color: #fff;
+}
+
+.copybutton:focus{
+    outline:none;
+}
+
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 50px;
+    }
+    .group{
+        flex-direction: column;
+        
+    }
+    .group div label{
+        font-size: 20px;
+      position: relative;
+    }
+    input[type="radio"]{
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+        position: relative;
+        top: 5px;
+    }
+    #random{
+      margin-top: 20px;
+        font-size: 20px;
+      height: 50px;
+    }
+    .css-code{
+        font-size: 20px;
+    }
+    .copybutton{
+        font-size: 20px;
+        color: #111;
+    }
+  }
